@@ -1,0 +1,47 @@
+<div class="card-content">
+  <div class="la-message la-message--{{message.type}}"
+       *ngIf="message.text">{{message.text}}</div>
+  <span class="card-title">Sign in</span>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="input-field col s12">
+        <input placeholder="Type Email"
+               id="first_name"
+               type="text"
+               formControlName="email"
+               [ngClass]="{'invalid': form.get('email').invalid && form.get('email').touched}">
+        <label for="first_name" class="active">Email</label>
+        <div class="la-form-help-txt"
+             *ngIf="form.get('email').invalid && form.get('email').touched">
+          <span *ngIf="form.get('email')['errors']['required']">Email should not be empty.</span>
+          <span *ngIf="form.get('email')['errors']['email']">Enter the correct email.</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input placeholder="Type Password"
+               id="password"
+               type="password"
+               formControlName="password"
+               [ngClass]="{'invalid': form.get('password').invalid && form.get('password').touched}">
+        <label for="password" class="active">Password</label>
+        <div class="la-form-help-txt"
+             *ngIf="form.get('password').invalid && form.get('password').touched">
+          <span *ngIf="form.get('password')['errors']['required']">Password should not be empty.</span>
+          <span *ngIf="form.get('password')['errors']['minlength']">Password must be longer than
+            <strong>{{form.get('password')['errors']['minlength']['requiredLength']}}</strong> characters.
+            Now <strong>{{form.get('password')['errors']['minlength']['actualLength']}}</strong></span>
+        </div>
+      </div>
+    </div>
+    <button class="waves-effect waves-light btn"
+            type="submit"
+            [disabled]="form.invalid">Login
+    </button>
+  </form>
+</div>
+<div class="card-action">
+  <span class="grey-text">Don't have an account?</span>
+  <a [routerLink]="'/registration'">Create an account</a>
+</div>

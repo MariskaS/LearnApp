@@ -1,0 +1,17 @@
+$color-login-bg:  #fff7c4;
+
+:host {
+  max-width: 100%;
+  height: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+  background-color: $color-login-bg;
+}
+
+.la-auth {
+  width: 384px;
+}

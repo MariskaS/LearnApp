@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "la",
       "styles": [
+        "../node_modules/materialize-css/dist/css/materialize.min.css",
         "styles.scss"
       ],
       "scripts": [],
@@ -55,6 +56,9 @@
   },
   "defaults": {
     "styleExt": "scss",
-    "component": {}
+    "component": {},
+    "serve": {
+      "port": 8080
+    }
   }
 }

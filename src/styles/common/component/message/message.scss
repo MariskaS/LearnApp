@@ -1,0 +1,14 @@
+.la-message {
+  padding: $spacing-base;
+  text-align: left;
+  color: $color-white;
+
+  //State
+  &--danger {
+    background-color: $color-danger;
+  }
+
+  &--success {
+    background-color: $color-success;
+  }
+}
