@@ -1,0 +1,17 @@
+@import "../../styles/common/core/mixins/mixin-flex";
+@import "../../styles/common/core/variables/variables";
+
+main {
+  flex: 1;
+  height: 100%;
+  @extend .mixin-flex-row;
+}
+
+.la-main {
+  flex: 1;
+  @extend .mixin-flex-column;
+
+  &__content {
+    flex: 1;
+  }
+}

@@ -3,9 +3,17 @@
 /*
 * Font
  */
-$font-size-s: 12px;
+$font-size-s:    12px;
+$font-size-base: 14px;
+$font-size-m:    16px;
 
 /*
 * Spacing
  */
+$spacing-s:    12px;
 $spacing-base: 24px;
+
+/*
+* Shadow
+ */
+$shadow-sidebar: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);

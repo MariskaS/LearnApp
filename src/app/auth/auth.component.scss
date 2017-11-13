@@ -1,4 +1,8 @@
-$color-login-bg:  #fff7c4;
+@import "../../styles/common/core/variables/variables";
+
+:host-context(body) {
+ height: 100vh;
+}
 
 :host {
   max-width: 100%;

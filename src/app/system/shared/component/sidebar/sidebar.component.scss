@@ -1,6 +1,43 @@
+@import "../../../../../styles/common/core/mixins/mixin-flex";
 @import "../../../../../styles/common/core/variables/variables";
 
 .la-sidebar {
+  height: 100%;
   width: 256px;
   background-color: $color-dark;
+  color: $color-white;
+  box-shadow: $shadow-sidebar;
+  @extend .mixin-flex-column;
+
+  &__head {
+    font-size: $font-size-m;
+  }
+
+  &__body {
+
+  }
+
+  &__link {
+    height: 48px;
+    padding: 0 $spacing-base;
+    @extend .mixin-flex-row;
+    @extend .mixin-flex-start-center;
+    user-select: none;
+    color: currentColor;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $btb-hover;
+    }
+
+    &.is-active {
+      background-color: $color-primary;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    border-radius: 0;
+  }
 }

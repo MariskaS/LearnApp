@@ -1,7 +1,10 @@
 <la-header></la-header>
-
-<la-sidebar></la-sidebar>
-
-<router-outlet></router-outlet>
-
-<la-footer></la-footer>
+<main>
+  <la-sidebar></la-sidebar>
+  <div class="la-main">
+    <div class="la-main__content">
+      <router-outlet></router-outlet>
+    </div>
+    <la-footer></la-footer>
+  </div>
+</main>
