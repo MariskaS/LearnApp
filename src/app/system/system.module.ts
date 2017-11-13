@@ -10,6 +10,7 @@ import { SystemComponent } from './system.component';
 import { DashboardPageComponent } from './dashboard/dashboard-page/dashboard-page.component';
 import { DashboardLearnProcessTabComponent } from './dashboard/dashboard-learn-process-tab/dashboard-learn-process-tab.component';
 import { DashboardThemesTabComponent } from './dashboard/dashboard-themes-tab/dashboard-themes-tab.component';
+import { ThemeService } from './shared/services/theme.service';
 
 @NgModule({
   imports: [
@@ -25,6 +26,9 @@ import { DashboardThemesTabComponent } from './dashboard/dashboard-themes-tab/da
     DashboardPageComponent,
     DashboardLearnProcessTabComponent,
     DashboardThemesTabComponent
+  ],
+  providers: [
+    ThemeService
   ]
 })
 

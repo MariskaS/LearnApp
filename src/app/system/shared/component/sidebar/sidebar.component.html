@@ -3,7 +3,8 @@
     <a [routerLink]="'./dashboard'" class="la-sidebar__link">Dashboard</a>
   </div>
   <div class="la-sidebar__body">
-    <button class="la-sidebar__btn waves-effect waves-light btn">add theme</button>
-    <a class="la-sidebar__link">sdvzsdv</a>
+    <a class="la-sidebar__btn waves-effect waves-light btn"
+            [routerLink]="'/system/dashboard/dashboardThemesTab'">add theme</a>
+    <a class="la-sidebar__link" *ngFor="let theme of themes">{{theme.name}}</a>
   </div>
 </div>

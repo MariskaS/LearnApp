@@ -27,5 +27,6 @@ body {
   &-content {
     overflow: hidden;
     overflow-y: auto;
+    padding: $spacing-s;
   }
 }
