@@ -11,6 +11,12 @@
       "password": "12345667788888888",
       "name": "test",
       "id": 2
+    },
+    {
+      "email": "test@test.com",
+      "password": "123456",
+      "name": "test",
+      "id": 3
     }
   ],
   "themes": [
@@ -23,36 +29,8 @@
       "id": 2
     },
     {
-      "name": "sdvd",
+      "name": "reghdrthgrt",
       "id": 3
-    },
-    {
-      "name": "dsvdvdv",
-      "id": 4
-    },
-    {
-      "name": "sdvdvvvvvvvvvvvvvvvvv",
-      "id": 5
-    },
-    {
-      "name": "rtttttttttttttttt",
-      "id": 6
-    },
-    {
-      "name": "dddddd",
-      "id": 7
-    },
-    {
-      "name": "tttt",
-      "id": 8
-    },
-    {
-      "name": "vvv",
-      "id": 9
-    },
-    {
-      "name": "drfr",
-      "id": 10
     }
   ]
 }

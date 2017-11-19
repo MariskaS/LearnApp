@@ -1,0 +1,314 @@
+#calc_track {
+  padding: 0 40px;
+}
+
+#calc_price_order_box,
+#calc_footer {
+  margin: 0 -40px;
+}
+
+div#calc_main {
+  border: 5px solid rgb(255, 172, 0);
+  background-color: #fff;
+  font-family: "Open Sans", Arial;
+  border-radius: 10px;
+}
+
+#calc_header {
+  background-image: url(/images/first_block.png);
+  font-family: "Open Sans", Arial;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 15px 18px 40px;
+}
+
+div#calc_header div#header_main {
+  text-align: left;
+  font-family: "Open Sans", Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: #5c4d28;
+}
+
+div#calc_header div#header_main span {
+  font-family: "Open Sans", Arial;
+  font-size: 30px;
+  color: rgb(202, 83, 5);
+}
+
+div#calc_header div span {
+  font-size: 18px;
+  color: rgb(202, 83, 5);
+}
+
+div#calc_main_second div#calc_track div#slider {
+  top: 15px;
+  left: 0;
+  width: 61%;
+  height: 10px;
+  background-color: #ffac00;
+  border-radius: 2px;
+  border: 0;
+  display: inline-block;
+  margin-right: 40px;
+  user-select: none;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -5px;
+}
+
+.element {
+  display: inline-block;
+  width: 125px;
+  float: right;
+}
+
+.element:after {
+  clear: both;
+}
+
+.element:after,
+.element:before {
+  display: table;
+  content: " ";
+}
+
+div#calc_main_second div#calc_track input#metres {
+  border: 1px solid #ffac00;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding: 2px;
+  background-color: #fff;
+  font-family: "Open Sans", Arial;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: rgb(201, 82, 5);
+}
+
+.place_prise {
+  position: relative;
+  top: 0px;
+  left: 245px;
+  font-size: 15px;
+}
+
+#element2 {
+  margin-top: 25px;
+  padding: 10px 0;
+}
+
+div#calc_price_order_box {
+  position: relative;
+  font-family: "Open Sans", Arial;
+  font-size: 24px;
+  font-weight: bold;
+  color: #5c4d28;
+  padding: 15px 40px;
+  background: #fce1a3;
+}
+
+div#calc_price_order_box div {
+  font-family: "Open Sans", Arial;
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: bold;
+  color: #5c4d28;
+  display: inline-block;
+  height: 42px;
+}
+
+div#calc_price_order_box div span {
+  color: rgb(202, 83, 5);
+}
+
+div#calc_price_order_box input#summary {
+  width: 125px;
+  height: 42px;
+  border: 1px solid #ffac00;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: "Open Sans", Arial;
+  font-size: 23px;
+  font-weight: bold;
+  color: rgb(202, 83, 5);
+  text-align: center;
+  display: inline-block;
+}
+
+div#calc_price_order_box input#order {
+  height: 42px;
+  border: none;
+  background-color: #5c4d28;
+  font-family: "Open Sans", Arial;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 4px;
+  width: 125px;
+  margin-left: 215px;
+  position: relative;
+  top: -2px;
+}
+
+div#calc_footer {
+  padding: 15px 50px 5px 40px;
+  background-color: #fbf3e0;
+  font-family: "Open Sans", Arial;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+div#calc_footer p {
+  color: #5c4d28;
+  font-size: 18px;
+}
+
+.place_prise {
+  position: relative;
+  left: 160px;
+  font-size: 15px;
+  color: #ca5305;
+}
+
+/**********************R****************/
+#calc_left_options, #calc_right_options {
+  display: inline-block;
+  padding-right: 55px;
+}
+
+#calc_left_options ul, #calc_right_options ul {
+  list-style: none;
+  padding: 0px;
+}
+
+#calc_left_options li, #calc_right_options li {
+  white-space: nowrap;
+}
+
+.marker {
+  padding-bottom: 25px;
+  color: rgb(202, 83, 5);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1200px) {
+  .place_prise {
+    left: 160px;
+  }
+
+  div#calc_price_order_box input#order {
+    margin-left: 65px;
+  }
+}
+
+@media screen and (max-width: 679px) {
+
+  div#calc_price_order_box input#order {
+    margin-left: 48px;
+  }
+  #calc_left_options, #calc_right_options {
+    display: inline-block;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) { /*div#calc_price_order_box input#order {margin-left: 35px;}	div#calc_price_order_box input#summary  {margin-left: 0px; width: 310px;}	*/
+  .element3 {
+    right: 0 !important;
+    top: 0 !important;
+    margin-top: 0 !important;
+    position: relative !important;
+    width: 100%;
+  }
+
+  .place_prise {
+    position: absolute!important;
+    top: 0 !important;
+    left: auto !important;
+    right: 15px !important;
+  }
+
+  .element {
+    display: block;
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-top: 30px;
+  }
+
+  div#calc_main_second div#calc_track div#slider {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  div#calc_price_order_box input#order {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+  }
+
+  div#calc_price_order_box input#summary {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  div#calc_price_order_box div {
+    height: auto;
+  }
+  div#calc_price_order_box {
+    text-align: center;
+    padding-bottom: 34px;
+  }
+}
+
+///
+#calc_main label {
+  font-weight: 400;
+}
+
+#calc_menus input[type=checkbox] {
+  margin: 0 3px 0;
+  vertical-align: middle;
+}
+
+#calc_menus label {
+  line-height: 1.1;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.element3 {
+  right: 40px;
+  top: 50%;
+  margin-top: -21px;
+  position: absolute;
+}
+
+#slider:focus,
+input,
+.ui-state-default:focus {
+  outline: none;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+  border: 0 !important;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #calc_header,
+  #calc_track,
+  div#calc_price_order_box {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  #calc_price_order_box,
+  #calc_footer {
+    margin: 0 -20px;
+  }
+}

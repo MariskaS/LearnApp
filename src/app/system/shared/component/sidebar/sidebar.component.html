@@ -4,7 +4,9 @@
   </div>
   <div class="la-sidebar__body">
     <a class="la-sidebar__btn waves-effect waves-light btn"
-            [routerLink]="'/system/dashboard/dashboardThemesTab'">add theme</a>
-    <a class="la-sidebar__link" *ngFor="let theme of themes">{{theme.name}}</a>
+       [routerLink]="'/system/dashboard/dashboardThemesTab'">add theme</a>
+    <a class="la-sidebar__link"
+       *ngFor="let theme of themes"
+       [routerLink]="['/system/theme', theme.id]">{{theme.name}}</a>
   </div>
 </div>
